@@ -1,0 +1,18 @@
+To build a docker image:
+    - Go into the folder that contains the Dockerfile
+    - docker image build -t <tag name> .
+
+Container commands:
+    - docker container ls -> list containers
+    - docker container run -p <external port>:<internal port> <image name> -> create and run container using image, exposing external port
+    - docker container run -d -p <external port>:<internal port> <image name> -> create and run container in the background using image, exposing external port
+
+
+
+Dockerfile commands:
+- FROM
+- EXPOSE
+- RUN
+- WORKDIR
+- COPY
+- CMD
